@@ -9,13 +9,13 @@ Except.
 
 I'm working on a codebase with a number of fairly large classes and specs, and they're a pain to navigate. The [Taglist](http://vim-taglist.sourceforge.net/) plugin makes navigation around classes quite a bit easier, but when editing a spec I was faced with this:
 
-![No tags!](images/no_tags.png)
+![No tags!](/images/no_tags.png)
 
 No taglist! I'm buggered if I'm scrolling through this whole file for the right place to put my next test. Now, I *could* refactor the spec into smaller pieces so I wouldn't have this problem. Arguably, I should. But the lack of tags would offend against my keenly-developed sense of aesthetics.
 
 So instead, I did this.
 
-![With tags!](images/with_tags.png)
+![With tags!](/images/with_tags.png)
 
 How do you get your hands on this hotness?
 
