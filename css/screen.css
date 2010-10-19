@@ -2,3 +2,8 @@ body {
   text-align: center;
   font: 13px helvetica,arial,sans-serif;
 }
+
+.site {
+  width: 50em;
+  text-align: justify;
+}
