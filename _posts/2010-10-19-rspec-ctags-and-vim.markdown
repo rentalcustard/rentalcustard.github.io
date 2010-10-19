@@ -19,7 +19,7 @@ So instead, I did this.
 
 How do you get your hands on this hotness?
 
-Grab my ctags fork from [here](http://github.com/mortice/exuberant-ctags). Compile and install in the usual way. Then grab my taglist fork from [here](http://github.com/mortice/taglist.vim). Run ctags in the normal way and you'll get your rspec files tagged and bagged.
+Grab my ctags fork from [here](http://github.com/mortice/exuberant-ctags). Compile and install in the usual way. Then grab and install my taglist fork from [here](http://github.com/mortice/taglist.vim). Run ctags in the normal way and you'll get your rspec files tagged and bagged.
 
 Now, this is far from perfect. In fact, it's pig-ugly and hardly works. What can I say? I've never written any C before, and I didn't particularly enjoy it on this outing. But hopefully there's enough here for someone with some more skill to get hacking on it so that eventually we can get these changes merged into the mainline of Ctags. Here's a list of things that need to be fixed:
 
