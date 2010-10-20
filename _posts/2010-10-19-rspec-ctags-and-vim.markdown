@@ -27,4 +27,4 @@ Now, this is far from perfect. In fact, it's pig-ugly and hardly works. What can
 * It'll probably break on various characters which aren't in the whitelist in [ruby.c:192](http://github.com/mortice/exuberant-ctags/blob/master/ruby.c#L192)
 * Tags aren't hierarchical
 
-**New** Discussion for this post [here](http://www.reddit.com/r/vim/comments/dtqwz/alpha_ctagstaglist_support_for_rspec_files_in_vim/)
+**New** Discussion for this post [here](http://www.reddit.com/r/ruby/comments/dtr3t/alpha_ctagstaglist_support_for_rspec_files_in_vim/)
