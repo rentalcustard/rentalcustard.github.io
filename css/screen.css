@@ -14,8 +14,7 @@ body {
 	font-size: 2em;
 }
 
-#front em {
+#front .highlight {
 	font-family: "bello-pro-1","bello-pro-2";
-	font-style: normal;
 	font-size: 2em;
 }
