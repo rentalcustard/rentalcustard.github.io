@@ -1,10 +1,7 @@
 body {
 	font-family: "proxima-nova-1","proxima-nova-2";
 	font-size: 1.2em;
-}
-
-/* Light Grey */
-body { background: #ccc url(background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAmUlEQVQYV12Q2wrEIAxEVaSI+P/f6JMPIkWk1OUEpmwrSEicW/S11n0ch1trOWqM0V3X9erP83S+tbZ55HwBmlF9733DSCmZ2n3fD4HZnNPlnJ3/WisCMXAIIVg1RQ2wQBFlXAADRNUUSykWnosNRB052DJqxAaMokjMX1vLTl+Eqr7OMpKLHP+ZBNDmlpEGMI9jjMdSSxHhB0QBnc28Jnb5AAAAAElFTkSuQmCC);
+	background: #ccc;
 }
 
 .site {
