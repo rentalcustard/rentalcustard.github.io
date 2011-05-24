@@ -6,16 +6,3 @@ body {
   width: 50em;
   text-align: justify;
 }
-
-#links {
-  float: left;
-}
-
-#links li {
-	list-style-type: none;
-	display: inline;
-}
-
-#front h1 {
-  display: inline;
-}
