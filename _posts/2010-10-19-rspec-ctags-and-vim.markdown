@@ -1,6 +1,7 @@
 ---
 layout: default
 title: RSpec, Ctags and vim, oh my!
+description: In which we learn how little we know about C but still make something kind of useful
 ---
 
 I recently switched to [Vim](http://www.vim.org/) for all my text-editing, including Rails development. This made me feel quite a bit more awesome.
