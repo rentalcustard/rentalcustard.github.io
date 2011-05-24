@@ -22,4 +22,13 @@ body {
 
 #front a {
   text-decoration: none;
+	color: #10afed;
+}
+
+#front a:visited {
+	color: #10afed;
+}
+
+#front a:active {
+	color: #5a55ed;
 }
