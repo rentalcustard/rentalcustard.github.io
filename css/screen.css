@@ -1,8 +1,21 @@
 body {
-  font: 13px helvetica,arial,sans-serif;
+	font-family: "proxima-nova-1","proxima-nova-2";
+	font-size: 1.2em;
 }
 
 .site {
   width: 50em;
   text-align: justify;
+}
+
+#front {
+	font-family: "proxima-nova-1","proxima-nova-2";
+	font-style: bold;
+	font-size: 2em;
+}
+
+#front em {
+	font-family: "bello-pro-1","bello-pro-2";
+	font-style: normal;
+	font-size: 2em;
 }
