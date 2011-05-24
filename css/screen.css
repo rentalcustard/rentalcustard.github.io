@@ -12,3 +12,7 @@ body {
 	list-style-type: none;
 	display: inline;
 }
+
+#front h1 {
+  display: inline;
+}
