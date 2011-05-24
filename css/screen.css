@@ -7,3 +7,7 @@ body {
   width: 50em;
   text-align: justify;
 }
+
+#links li {
+	list-style-type: none;
+}
