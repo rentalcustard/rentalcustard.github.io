@@ -7,6 +7,10 @@ body {
   text-align: justify;
 }
 
+#links {
+  float: left;
+}
+
 #links li {
 	list-style-type: none;
 	display: inline;
