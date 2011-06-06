@@ -43,7 +43,7 @@ Instead, we can use test spies, which collect information about what methods wer
 
 <script src="https://gist.github.com/1009053.js?file=rr_test_spies.rb"> </script>
 
-But the problem with this approach is on line 2. Without that line, the invocation will fail with a NoMethodError and the object doesn't do any collecting of the method call so that it can be asserted on later. There's no need for this in a pure test spy library. The misleadingly-named Mockito for Java has no need for method stubs to exist to allow message verification after the fact:
+But the problem with this approach is on line 2. Without that line, the invocation will fail with a NoMethodError and the object doesn't do any collecting of the method call so that it can be asserted on later. There's no need for this in a pure test spy library. The misleadingly-named [Mockito](http://mockito.org/) for Java has no need for method stubs to exist to allow message verification after the fact:
 
 <script src="https://gist.github.com/1009053.js?file=mockito_example.java"> </script>
 
