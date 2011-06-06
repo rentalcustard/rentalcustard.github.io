@@ -64,3 +64,8 @@ Future plans include:
 * Supporting argument matchers
 
 However, it is usable now and I'm finding it more fun than testing collaborations with mock objects.
+
+*See also:*
+* [Brian Swan - Mocks Suck (and what to do about it)](http://vimeo.com/16285089)
+* [Dan North - The End of Endotesting?](http://dannorth.net/2008/09/14/the-end-of-endotesting/)
+* [Martin Fowler - Mocks aren't Stubs](http://martinfowler.com/articles/mocksArentStubs.html)
