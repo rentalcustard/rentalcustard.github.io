@@ -10,6 +10,7 @@ h1 {
 
 h1 { font-size: 2.5em; }
 h2 { font-size: 2em;}
+h3 { font-size: 1.5em;}
 
 .site {
   width: 50em;
@@ -45,4 +46,37 @@ a:visited {
 
 a:active {
 	color: #5a55ed;
+}
+
+div#cv {
+  text-align: center;
+  margin-right: 5em;
+  margin-left: 5em;
+}
+
+ul#contact li {
+  list-style-type: none;
+  display: inline;
+  border-left: 1px solid black;
+  padding-left: 0.5em;
+}
+
+ul#contact li:first-child {
+  border-left: none;
+}
+
+table#career-snapshot, div#employment-history {
+  text-align: left;
+}
+
+table#career-snapshot tr td {
+  padding-right: 3em;
+}
+
+table#career-snapshot tr td:nth-child(2) {
+  font-weight: bold;
+}
+
+.elliptical {
+  font-style: italic;
 }
