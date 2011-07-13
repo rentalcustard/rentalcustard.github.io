@@ -80,3 +80,19 @@ table#career-snapshot tr td:nth-child(2) {
 .elliptical {
   font-style: italic;
 }
+
+#references {
+  font-style: italic;
+  font-weight: bold;
+}
+
+div.job {
+  border-bottom: 2px solid #bbbbbb;
+  margin-bottom: 1em;
+}
+
+h2 {
+  border-top: 3px solid #aaaaaa;
+  margin-top: 1em;
+  padding-top: 0.5em;
+}
