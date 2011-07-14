@@ -59,6 +59,7 @@ ul#contact li {
   display: inline;
   border-left: 1px solid black;
   padding-left: 0.5em;
+  margin-left: 0.5em;
 }
 
 ul#contact li:first-child {
