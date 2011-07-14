@@ -54,18 +54,6 @@ div#cv {
   margin-left: 5em;
 }
 
-ul#contact li {
-  list-style-type: none;
-  display: inline;
-  border-left: 1px solid black;
-  padding-left: 0.5em;
-  margin-left: 0.5em;
-}
-
-ul#contact li:first-child {
-  border-left: none;
-}
-
 table#career-snapshot, div#employment-history {
   text-align: left;
 }
