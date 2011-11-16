@@ -5,7 +5,7 @@ description: In which we get bitten by a hidden bug and we warn you about it.
 ---
 TL;DR: if your gem has dependencies on other gems, make sure it requires them, because Bundler won't hold your hand any more.
 
-Gem authors: if you're using your gem primarily in [Bundler](http://gembundler.com/)-managed environments and you have runtime dependencies on other gems, you may have a hidden bug which Bundler 1.1 (as it stands will reveal). Read on to find out how to fix it.
+Gem authors: if you're using your gem primarily in [Bundler](http://gembundler.com/)-managed environments and you have runtime dependencies on other gems, you may have a hidden bug which Bundler 1.1 (as it stands) will reveal. Read on to find out how to fix it.
 
 Given a gem depending on capistrano with a single file in its libs, looking something like this:
 
