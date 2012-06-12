@@ -44,7 +44,7 @@ My issue with the active record pattern, and with Rails' ActiveRecord library in
 
 ## Active Records and Value Objects ##
 
-In the majority of Rails codebases I've seen, the active record classes represent some of the core entities in the domain. Hence, financial systems (to use a clichéd example) have an Account class which is an active record. In reasoning about the design of these systems, I want these to be objects with behaviour and mutable state, albeit state which only the object instances themselves manage and mutate. Hence, to deal with interest payments, I don't want to say:
+In the majority of Rails codebases I've seen, the active record classes represent some of the core entities in the domain. Hence, financial systems (to use a clich&eacute;d example) have an Account class which is an active record. In reasoning about the design of these systems, I want these to be objects with behaviour and mutable state, albeit state which only the object instances themselves manage and mutate. Hence, to deal with interest payments, I don't want to say:
 
     account = Account.find(1) #substitute in whatever retrieval mechanism takes your fancy
     AccountManager.new(account).accrue_interest
