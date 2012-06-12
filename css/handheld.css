@@ -1,0 +1,86 @@
+body {
+	font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+	font-size: 1.2em;
+	background: #eeeeee;
+}
+
+h1 {
+	font-family: "bello-pro-1","bello-pro-2";
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em;}
+h3 { font-size: 1.5em;}
+
+.site {
+  width: 50em;
+}
+
+#front {
+	font-family: "proxima-nova-1","proxima-nova-2";
+	font-size: 2em;
+}
+
+#front .smaller {
+  font-size: 0.7em;
+}
+
+#front .smaller .highlight {
+  font-size: 0.8em;
+}
+
+#front .highlight {
+	font-family: "bello-pro-1","bello-pro-2";
+	font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+	color: #10afed;
+}
+
+a:visited {
+	color: #10afed;
+}
+
+a:active {
+	color: #5a55ed;
+}
+
+div#cv {
+  text-align: center;
+  margin-right: 5em;
+  margin-left: 5em;
+}
+
+table#career-snapshot, div#employment-history {
+  text-align: left;
+}
+
+table#career-snapshot tr td {
+  padding-right: 3em;
+}
+
+table#career-snapshot tr td:nth-child(2) {
+  font-weight: bold;
+}
+
+.elliptical {
+  font-style: italic;
+}
+
+#references {
+  font-style: italic;
+  font-weight: bold;
+}
+
+div.job {
+  border-bottom: 2px solid #bbbbbb;
+  margin-bottom: 1em;
+}
+
+h2 {
+  border-top: 3px solid #aaaaaa;
+  margin-top: 1em;
+  padding-top: 0.5em;
+}
