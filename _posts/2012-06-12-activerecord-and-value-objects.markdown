@@ -3,7 +3,7 @@ layout: default
 title: Active Records and Value Objects
 description: In which we stop trolling the twitter back-channel and try to say something of worth
 ---
-At last night's [LRUG](http://lrug.org), Matt Wynne and Steve Tooke gave a great talk about trying to apply the concepts of [Hexagonal Architecture](http://alistair.cockburn.us/Hexagonal+architecture) to a typical Rails project. I particularly enjoyed the statement that "all idiomatic Rails controller code is procedural," with which I strongly agree.
+At last night's [LRUG](http://lrug.org), Matt Wynne and Steve Tooke gave a great [talk](http://skillsmatter.com/podcast/ajax-ria/hexagonal-rails) about trying to apply the concepts of [Hexagonal Architecture](http://alistair.cockburn.us/Hexagonal+architecture) to a typical Rails project. I particularly enjoyed the statement that "all idiomatic Rails controller code is procedural," with which I strongly agree.
 
 Now, this being a technical talk about object-oriented design, and this being me, there were some things in the talk with which I disagreed. Unfortunately, I didn't pay attention to what was coming through in my twitter feed, and so one might get the impression from [my tweets](http://storify.com/mortice/what-happens-when-you-rant-on-twitter-without-cont) that this was my assessment of the majority of the talk. This isn't the case, and I would have liked to get the chance to discuss things in person with Matt and Steve after the talk. This blog post is an attempt to open a discussion on what was really my only objection to the talk, and shouldn't be viewed as a wholesale critique of their position.
 
