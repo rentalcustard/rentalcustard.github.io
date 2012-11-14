@@ -56,10 +56,10 @@ So perhaps we might decide to reject the idea of testing by verifying state. We 
 
 Mock objects arise from the situation in which we want to architect our code as a network of objects sending messages to one another (Tell, Don't Ask), while testing the compilation units which define those objects in isolation from one another (Test in Isolation), while our tools enable testing only based on the state of the system or a part of it at any given time (state-based assertion). By extending the behaviour of stubs, an existing concept from the world of testing, to include verification of the messages received, mock objects enable a style of testing which allows us to move away from state-based assertion and toward specifying the behaviour of an object in terms of its interactions with others.
 
-[^1]: http://www.objectmentor.com/resources/articles/srp.pdf
-[^2]: http://growing-object-oriented-software.com
-[^3]: http://www.ccs.neu.edu/home/lieber/LoD.html
-[^4]: http://c2.com/cgi/wiki?StandardDefinitionOfUnitTest I appreciate the naivety of assuming standard definitions for anything in the world of software development, but I beg the reader's indulgence.
+[^1]: [http://www.objectmentor.com/resources/articles/srp.pdf](http://www.objectmentor.com/resources/articles/srp.pdf)
+[^2]: [http://growing-object-oriented-software.com](http://growing-object-oriented-software.com)
+[^3]: [http://www.ccs.neu.edu/home/lieber/LoD.html](http://www.ccs.neu.edu/home/lieber/LoD.html)
+[^4]: [http://c2.com/cgi/wiki?StandardDefinitionOfUnitTest](http://c2.com/cgi/wiki?StandardDefinitionOfUnitTest). I appreciate the naivety of assuming standard definitions for anything in the world of software development, but I beg the reader's indulgence.
 [^5]: While I normally use RSpec in testing examples, in this case I use the more traditional Test::Unit framework, since we are concerned here with historical context.
 [^6]: I apologize, as ever, for the contrived nature of this code example. Since a Number is a value, it should not be mutable, and hence the example breaks down under scrutiny. I am attempting to focus on the nature of the *test* rather than that of the (imagined) code it is testing.
-[^7]: http://www.objectmentor.com/resources/articles/dip.pdf
+[^7]: [http://www.objectmentor.com/resources/articles/dip.pdf](http://www.objectmentor.com/resources/articles/dip.pdf)
