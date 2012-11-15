@@ -3,7 +3,7 @@ layout: default
 title: Three Competing Forces
 description: In which we take a look at mock objects in their context
 ---
-I want to talk about mocks in terms of their historical context, and the forces which led to their development. While we should strive not to be bound by the past, often considering tools in terms of the problems they were designed to solve is a useful guide to their effective usage, or at the least to an understanding of their deficiencies. By presenting three principles from the schools of object-oriented design and test-driven development, we can observe a conflict in their applications. Mock objects, and the style of testing they represent, provide us with a way to resolve this conflict, or at least to obviate it.
+I want to talk about mock objects, or mocks, in terms of their historical context, and the forces which led to their development. While we should strive not to be bound by the past, often considering tools in terms of the problems they were designed to solve is a useful guide to their effective usage, or at the least to an understanding of their deficiencies. By presenting three principles from the schools of object-oriented design and test-driven development, we can observe a conflict in their applications. Mock objects, and the style of testing they represent, provide us with a way to resolve this conflict, or at least to obviate it.
 
 ## Principle 1: Tell, Don't Ask
 
