@@ -9,7 +9,7 @@ Now, this being a technical talk about object-oriented design, and this being me
 
 With all that out of the way: during the talk, Matt said something along the lines of "I'm thinking about creating Value Object [classes] for each of my ActiveRecords." This is an approach with which I do not agree, even though I can understand the forces which might lead one to take it.
 
-### Value Objects ###
+## Value Objects ##
 
 The way I understand the term "value object" is: an immutable object class designed to encapsulate a value with meaning in the domain, to make message-passing between objects with behaviour easier and more idiomatic. Hence, a date is a value object: it is initialized with a value; performing arithmetic on it returns another date instance<sup>1</sup>. The presence of this class in the system makes communicating between two objects that have a common concept of dates easier; instead of saying:
 
@@ -32,7 +32,7 @@ We often want to create value object classes of our own to simplify message-pass
 
     reporting_system.file_event(Event.new("Some event data"))
 
-### Active Records ###
+## Active Records ##
 
 The way I understand the active record pattern is: an object class which has mutable state and is backed by a database table, with an interface including a `save` instance method, which will cause a database insert/update depending on context. This object class may also include behavioural methods not related to persistence.
 
@@ -42,7 +42,7 @@ In the former case, it is very easy to end up with a proliferation of "-er" obje
 
 My issue with the active record pattern, and with Rails' ActiveRecord library in particular, has always been that it encourages the creation of stateful object classes representing entities in the system which have genuine behaviours and backing them with persistence, without offering a solution to this design dilemma. For this reason, I prefer alternative approaches which pull persistence out into its own classes. Here, I think Steve, Matt, and I are in agreement.
 
-### Active Records and Value Objects ###
+## Active Records and Value Objects ##
 
 In the majority of Rails codebases I've seen, the active record classes represent some of the core entities in the domain. Hence, financial systems (to use a clich&eacute;d example) have an Account class which is an active record. In reasoning about the design of these systems, I want these to be objects with behaviour and mutable state, albeit state which only the object instances themselves manage and mutate. Hence, to deal with interest payments, I don't want to say:
 
@@ -63,7 +63,7 @@ This smells to me. Although we avoid mixing persistence and domain concerns in t
 
 Since the `accrue_interest` method's implementation will depend on the account's type and data, it feels to me that it belongs in the account. Persistence is an entirely separate question from this, and it feels wrong to me to be led to take behaviour away from the most natural place in our system because our persistence pattern is problematic.
 
-### Closing thoughts ###
+## Closing thoughts ##
 
 I tend to think that the active record pattern leads good developers onto the horns of a dilemma: either we can violate the single responsibility principle, or we can take behaviour away from the state which affects that behaviour. It is this dilemma which I believe leads Matt and Steve to think about creating value objects for their active records. I think this approach is dangerous, and would rather avoid the dilemma by avoiding the use of the active record pattern. To that end, I have started sketching an alternative approach to persistence in Ruby, jokingly called [Ribernate](https://github.com/mortice/ribernate)<sup>3</sup>. Other people have thought about this too. See for example PlayLouder's [persistence library](https://github.com/playlouder/persistence).
 

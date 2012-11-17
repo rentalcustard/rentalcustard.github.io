@@ -5,7 +5,7 @@ description: In which we take a look at mock objects in their context
 ---
 I want to talk about mock objects, or mocks, in terms of their historical context, and the forces in object-oriented design and test-driven development which led to their conception. While we should strive not to be bound by the past, often considering tools in terms of the problems they were designed to solve is a useful guide to their effective usage, or at the least to an understanding of their deficiencies. By presenting three principles from the schools of object-oriented design and test-driven development, we can observe a conflict in their applications. Mock objects, and the style of testing they represent, provide us with a way to resolve this conflict, or at least to obviate it.
 
-### Principle 1: Tell, Don't Ask
+## Principle 1: Tell, Don't Ask
 
 Very closely related to the Single Responsibility Principle[^1], this is the principle that an object should normally avoid making decisions about what to do based on the state of another object. Here, as ever, I am heavily indebted to Steve Freeman and Nat Pryce[^2], and I see no better way of illustrating this principle than to quote from them, translating from Java to Ruby:
 
@@ -18,7 +18,7 @@ Very closely related to the Single Responsibility Principle[^1], this is the pri
 
 Astute readers will note that this principle is also known as the Law of Demeter[^3]. Indeed, Freeman and Pryce identify the two (p. 17). The style of design that they advocate, however, actually goes further than Demeter; for the most part, they do not ask questions of objects on which they call command methods. Hence (p. 18), "[w]e try to be sparing with queries on objects (as opposed to values) because they can allow information to "leak" out of the object, making the system a little bit more rigid." I would therefore like to extend the wording of Tell, Don't Ask (hereafter, 'TDA'), if not the intent, somewhat, to say that we should avoid defining and calling query methods on objects for which we define and call command methods.
 
-### Principle 2: Test in Isolation
+## Principle 2: Test in Isolation
 
 The standard definition of a unit test[^4] is, roughly, a test which exercises a single compilation unit (in an OO system, a class) in isolation, such that a failure in the unit test indicates a bug in either the test, the compilation unit, or the environment in which the test is running, and not in any other compilation unit.
 
@@ -30,7 +30,7 @@ Testing in isolation, assuming a context in which there are higher-level tests t
 * The ability, when a test is failing, to determine efficiently the compilation unit into which the corresponding bug has been introduced
 * Feedback about the dependencies of our object, through the amount of effort required to set up stub objects in their place. Both the presence of complicated stubs and the presence of a large number of stubs in the setup for an isolated test are smells that we have design problems pertaining to the unit under test.
 
-### Principle 3: State-based assertion
+## Principle 3: State-based assertion
 
 Observe that the simplest form of a unit test runs something like this[^5]:
 
@@ -44,7 +44,7 @@ Here, we arrange our unit under test so that it is ready for us to exercise the 
 
 I hesitate to call this a 'principle'. It would be more correct to say it is a fact of testing frameworks which shapes our thinking, and that it is a force which we will see conflicts with the prior two principles.
 
-### A conflict
+## A conflict
 
 Observe that the rigorous application of these three principles leads us into conflict. If we test by verifying state and also want to test in isolation, we need our subject under test to expose its state somehow, leading us to violate TDA by calling a query method on an object on which we have defined command methods. Further, in this case, the behaviour of our object may well be simply that it, having made some decisions of its own, calls on another object in a certain way. Unless it proceeds to ask a question of that other object and alter its state accordingly, we cannot verify this behaviour by inspecting the state of the unit under test. Hence, testing by verifying state pushes us away from the principle of TDA.
 
@@ -52,7 +52,7 @@ We can continue to test based on state while conforming to TDA by rejecting the 
 
 So perhaps we might decide to reject the idea of testing by verifying state. We might decide, instead, to verify that, given some preconditions and a method call with certain parameters, our unit under test calls on one of its collaborators in such-and-such a way. So, instead of a stub, we introduce to the object a test double which will give us the ability to pass or fail the test based on the messages which it is sent. With this facility, we preserve the ability to test units in isolation when the behaviour of those units is defined in terms of their interaction with other objects in certain conditions and not primarily in terms of their state. This is precisely the facility that mock objects give us.
 
-### Conclusion
+## Conclusion
 
 Mock objects arise from the situation in which we want to architect our code as a network of objects sending messages to one another (Tell, Don't Ask), while testing the compilation units which define those objects in isolation from one another (Test in Isolation), while our tools enable testing only based on the state of the system or a part of it at any given time (state-based assertion). By extending the behaviour of stubs, an existing concept from the world of testing, to include verification of the messages received, mock objects enable a style of testing which allows us to move away from state-based assertion and toward specifying the behaviour of an object in terms of its interactions with others.
 
