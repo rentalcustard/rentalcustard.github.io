@@ -1,7 +1,9 @@
 body {
 	font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
-	font-size: 1.2em;
 	background: #eeeeee;
+  margin-left: 2em;
+  margin-right: 4em;
+  font-size: 1.2em;
 }
 
 h1 {
@@ -21,6 +23,10 @@ h3 { font-size: 1.5em;}
 	font-size: 2em;
 }
 
+#front .name {
+	font-family: "bello-pro-1","bello-pro-2";
+}
+
 #front .smaller {
   font-size: 0.7em;
 }
@@ -30,7 +36,6 @@ h3 { font-size: 1.5em;}
 }
 
 #front .highlight {
-	font-family: "bello-pro-1","bello-pro-2";
 	font-size: 1.2em;
 }
 
