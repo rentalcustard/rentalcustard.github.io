@@ -4,6 +4,7 @@ title: Why I Won't Go To Your Conference
 description: In which we rant a bit about jollies
 ---
 
+
 I'm feeling a bit left out. You see, a lot of my peers attend a lot of programming conferences in a typical year, whereas I fail to see any value in doing so. And then, over the past couple of days, I was considering buying tickets for two of them: [Scottish Ruby Conference 2014](http://2014.scottishrubyconference.com/) and [Arrrcamp 2013](http://arrrrcamp.be/), before deciding that I could see no justification for doing so. Let me explain, by picking on these two conferences in an entirely unfair way.
 
 ##Scottish Ruby Conference
@@ -41,6 +42,8 @@ These factors, in turn, entail that the people I'm likely to meet at a tech conf
 OK, so perhaps you agree with me that the majority of tech conferences fail to represent good value to a large part of their potential audience. Perhaps you agree that this will have all kinds of undesireable knock-on effects. What do we do about it? Well, I'd suggest we need to think differently, at the very least. Conference organizers need to question the assumption that you need sponsorship, that you need parties, that you should pay your speakers' travel expenses, and so on. Conference attendees need to ask conference organizers what is different about their conference to justify the extra cost compared to an event like Ruby Manor[^3], and then - if they're employed - relay this accounting to the people paying for the ticket.
 
 And this is where the conclusion is supposed to go in the blog post.
+
+**UPDATE** - the first version could be read as saying attending conferences was easier for freelance developers. I meant it's easier to justify the costs if it's decided to be worthwhile, and have made some edits to try and make this clearer.
 
 [^1]: Although, given that this is the first I've heard about arrrcamp this year, I have to wonder how they heard about the call for papers. Is there a secret chat channel sharing this information? Might lack of CFP visibility be a problem for speaker panel diversity?
 [^2]: And let's be honest, talks given at technical conferences tend to vary wildly in their quality. If the conference organizers want the talks to be the main draw, they should make efforts to improve the quality of talks given - for example, with the kind of coaching that Ruby Manor's organizers offer their speakers - and advertize that this happens.
