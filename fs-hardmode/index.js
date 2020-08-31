@@ -8,7 +8,7 @@ var next = [[52.320055, 4.779994], [50.848447, 4.350446], [50.899377, 4.457018]]
 var map = L.map('map-container').setView(points[0], 5);
 
 L.tileLayer('https://c.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     maxZoom: 18,
     tileSize: 512,
     zoomOffset: -1
