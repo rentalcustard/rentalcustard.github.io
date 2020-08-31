@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Flight Simulator: Hard Mode</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+            integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+            crossorigin="" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <section id="main">
+            <h1 id="heading">
+                Flight Simulator: <i>Hard Mode</i>
+            </h1>
+            <h2 id="subtitle">
+                Around the world in a Cessna 152
+            </h2>
+            <section id="description">
+                <p>I'm using Microsoft Flight Simulator to visit every world capital in the most basic and slowest aircraft which isn't amphibious or designed for rough landings: The Cessna 152.</p>
+                <p>The Cessna 152 has a cruising speed of 107 knots and a range of 415 nautical miles. Those are not big numbers, so this will be <strong>hard</strong> and take a <strong>while</strong>.</p>
+                <p>To make this harder/more realistic/fun, there are the following extra rules:</p>
+                <ul>
+                    <li>No GPS (or any other tool or instrument that doesn't appear in the plane's cockpit).</li>
+                    <li>Maps that do not show the plane's location are allowed.</li>
+                    <li>No assistance turned on within Flight Simulator - with the exception of taxi ribbon*.</li>
+                    <li>No AI control allowed.</li>
+                    <li>Outside cockpit view can only be used for sightseeing/entertainment purposes - no manoeuvering while in this view.</li>
+                    <li>If I crash, the flight must restart from the last place I was safely on the ground.</li>
+                    <li>If I have to land outside an airfield, the next flight must start from the nearest airfield, land where I landed, and then resume.</li>
+                </ul>
+                <p class="note">*Taxi ribbon is turned on because the alternative would be to load up and print out diagrams of every airport in the world that I intend to land at, and I'm trying to have <strong>some</strong> fun here.</p>
+                <p>You can watch me try to do this on <a href="https://twitch.tv/rentalcustard">Twitch</a>. I'll announce upcoming streams on <a href="https://www.twitter.com/rentalcustard">Twitter</a>.</p>
+            </section>
+        </section>
+        <section id="map">
+            <h2>
+                The journey so far
+            </h2>
+            <div id="map-container">
+            </div>
+            <p id="map-explanation" class="note">
+                The markers are places I've landed. The popups on those take you to the video of the leg on Twitch. The solid line shows the route taken so far. The dashed line shows the intended next leg.
+            </p>
+        </section>
+        <section id="clips">
+            <h2>Last highlight</h2>
+            <iframe src="https://clips.twitch.tv/embed?clip=ObliviousSuperKittenSuperVinlin&parent=www.tomstuart.co.uk" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+        </section>
+        <script src="index.js"></script>
+    </body> 
+</html>

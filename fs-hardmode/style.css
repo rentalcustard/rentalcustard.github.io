@@ -1,0 +1,49 @@
+body {
+   font-family: 'Open Sans', sans-serif; 
+   font-size: 1.5em;
+}
+
+h1, h2, h3 {
+    font-family: 'EB Garamond', serif;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+#heading {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#subtitle {
+    text-align: center;
+    font-style: italic;
+}
+
+#map {
+    height: 40em;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5em;
+}
+
+#map-container {
+    height: 100%;
+    width: 100%;
+}
+
+.note {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#clips {
+    width: 80%;
+    margin: auto;
+}
